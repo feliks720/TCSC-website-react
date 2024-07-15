@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-info">
           <h3>OFFICE HOURS</h3>
-          <p>Mon-Fri: 7:00-18:00</p>
+          <p>Mon -- Fri: 7:00 am -18:00 pm</p>
           <p>Sun: closed</p>
         </div>
         <div className="footer-info">
