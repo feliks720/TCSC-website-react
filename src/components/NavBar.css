@@ -136,6 +136,7 @@
   .navbar-item {
     margin-left: 0;
     width: 100%;
+    margin-bottom: 1rem; /* Add space between the links */
   }
 
   .navbar-link {

@@ -30,7 +30,7 @@ const Home = () => {
       <div className="slogan-container">
         <div className="slogan">
           <h2>HIGHLY-PRINCIPLED CUSTOM HOME BUILDER</h2>
-          <h2>DEPENDABLE CONSTRUCTION SERVICES SINCE 2013S</h2>
+          <h2>DEPENDABLE CONSTRUCTION SERVICES SINCE 2012</h2>
           <Link to="/contact-us" className="get-quote-button">Get a Quote</Link>
         </div>
       </div>

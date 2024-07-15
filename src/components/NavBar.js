@@ -1,15 +1,29 @@
 // src/components/NavBar.js
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 import logo from '../assets/TCSC logo.PNG'; // Ensure this path is correct
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="navbar">
@@ -25,7 +39,7 @@ const NavBar = () => {
           &#9776;
         </div>
       </div>
-      <div className={`navbar-bottom ${isOpen ? 'open' : ''}`}>
+      <div className={`navbar-bottom ${isOpen ? 'open' : ''}`} ref={menuRef}>
         <ul className="navbar-menu">
           <li className="navbar-item">
             <Link to="/" className="navbar-link">Home</Link>
