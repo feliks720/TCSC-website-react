@@ -1,5 +1,6 @@
 // src/pages/Home.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Home.css'; // Import the CSS file for styling
@@ -26,8 +27,15 @@ const Home = () => {
           </div>
         </Carousel>
       </div>
-      <h1>Welcome to TCSC Construction</h1>
-      <p>Your trusted partner in home building.</p>
+      <div className="slogan-container">
+        <div className="slogan">
+          <h2>HIGHLY-PRINCIPLED CUSTOM HOME BUILDER</h2>
+          <h2>DEPENDABLE CONSTRUCTION SERVICES SINCE 2000BC</h2>
+          <Link to="/contact-us" className="get-quote-button">Get a Quote</Link>
+        </div>
+      </div>
+      {/* <h1>Welcome to TCSC Construction</h1>
+      <p>Your trusted partner in home building.</p> */}
     </div>
   );
 };
