@@ -9,11 +9,11 @@
 
 /* Contact Form Container */
 .contact-form-container {
-  flex: 1; /* Takes up remaining space */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
   background-color: #f9f9f9;
   border-radius: 8px;
   /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
