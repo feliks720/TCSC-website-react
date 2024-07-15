@@ -41,19 +41,19 @@ const NavBar = () => {
       </div>
       <div className={`navbar-bottom ${isOpen ? 'open' : ''}`} ref={menuRef}>
         <ul className="navbar-menu">
-          <li className="navbar-item">
+          <li className="navbar-item" onClick={toggleMenu}>
             <Link to="/" className="navbar-link">Home</Link>
           </li>
-          <li className="navbar-item">
+          <li className="navbar-item" onClick={toggleMenu}>
             <Link to="/about-us" className="navbar-link">About Us</Link>
           </li>
-          <li className="navbar-item">
+          <li className="navbar-item" onClick={toggleMenu}>
             <Link to="/our-services" className="navbar-link">Our Services</Link>
           </li>
-          <li className="navbar-item">
+          <li className="navbar-item" onClick={toggleMenu}>
             <Link to="/projects" className="navbar-link">Projects</Link>
           </li>
-          <li className="navbar-item">
+          <li className="navbar-item" onClick={toggleMenu}>
             <Link to="/contact-us" className="navbar-link">Contact Us</Link>
           </li>
         </ul>
