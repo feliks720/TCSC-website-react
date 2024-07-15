@@ -36,53 +36,67 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form-container">
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <div className="contact-form-group">
-          <label className="contact-form-label">Name</label>
-          <input
-            className="contact-form-input"
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="contact-form-group">
-          <label className="contact-form-label">Email</label>
-          <input
-            className="contact-form-input"
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="contact-form-group">
-          <label className="contact-form-label">Message</label>
-          <textarea
-            className="contact-form-textarea"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <button className="contact-form-button" type="submit">
-          Send
-        </button>
-      </form>
-      {responseMessage && (
-        <p
-          className={`contact-form-response ${
-            isError ? "contact-form-error" : ""
-          }`}
-        >
-          {responseMessage}
+    <div className="contact-section">
+      <div className="contact-info">
+        <h2>Contact Information</h2>
+        <p>
+          <strong>Address:</strong> 1234 Main St, Anytown, USA
         </p>
-      )}
+        <p>
+          <strong>Phone:</strong> (123) 456-7890
+        </p>
+        <p>
+          <strong>Email:</strong> contact@provider.com
+        </p>
+      </div>
+      <div className="contact-form-container">
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <div className="contact-form-group">
+            <label className="contact-form-label">Name</label>
+            <input
+              className="contact-form-input"
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="contact-form-group">
+            <label className="contact-form-label">Email</label>
+            <input
+              className="contact-form-input"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="contact-form-group">
+            <label className="contact-form-label">Message</label>
+            <textarea
+              className="contact-form-textarea"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <button className="contact-form-button" type="submit">
+            Send
+          </button>
+        </form>
+        {responseMessage && (
+          <p
+            className={`contact-form-response ${
+              isError ? "contact-form-error" : ""
+            }`}
+          >
+            {responseMessage}
+          </p>
+        )}
+      </div>
     </div>
   );
 };
