@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "./emailJSDefinations";
+import "./ContactForm.css";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const ContactForm = () => {
   });
 
   const [responseMessage, setResponseMessage] = useState("");
+  const [isError, setIsError] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -22,21 +24,24 @@ const ContactForm = () => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
       (result) => {
-        setResponseMessage("Message Sent, We will get back to you shortly");
+        setResponseMessage("Message Sent, We will get back to you shortly!");
+        setIsError(false);
       },
       (error) => {
-        setResponseMessage("An error occurred, Please try again", error.text);
+        setResponseMessage("An error occurred, Please try again");
+        setIsError(true);
       }
     );
     setFormData({ name: "", email: "", message: "" });
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Name</label>
+    <div className="contact-form-container">
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="contact-form-group">
+          <label className="contact-form-label">Name</label>
           <input
+            className="contact-form-input"
             type="text"
             name="name"
             value={formData.name}
@@ -44,9 +49,10 @@ const ContactForm = () => {
             required
           />
         </div>
-        <div>
-          <label>Email</label>
+        <div className="contact-form-group">
+          <label className="contact-form-label">Email</label>
           <input
+            className="contact-form-input"
             type="email"
             name="email"
             value={formData.email}
@@ -54,18 +60,29 @@ const ContactForm = () => {
             required
           />
         </div>
-        <div>
-          <label>Message</label>
+        <div className="contact-form-group">
+          <label className="contact-form-label">Message</label>
           <textarea
+            className="contact-form-textarea"
             name="message"
             value={formData.message}
             onChange={handleChange}
             required
           />
         </div>
-        <button type="submit">Send</button>
+        <button className="contact-form-button" type="submit">
+          Send
+        </button>
       </form>
-      {responseMessage && <p>{responseMessage}</p>}
+      {responseMessage && (
+        <p
+          className={`contact-form-response ${
+            isError ? "contact-form-error" : ""
+          }`}
+        >
+          {responseMessage}
+        </p>
+      )}
     </div>
   );
 };
