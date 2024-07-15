@@ -1,0 +1,76 @@
+/* src/components/NavBar.css */
+
+.navbar {
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-top {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px; /* Adjust the height as needed */
+  margin-right: 1rem;
+}
+
+.navbar-company-name {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-contact a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-contact a:hover {
+  text-decoration: underline;
+}
+
+.navbar-bottom {
+  background-color: #343a40;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 1.5rem;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #495057;
+}

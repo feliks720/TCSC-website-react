@@ -1,0 +1,27 @@
+/* src/pages/Home.css */
+
+.home {
+  text-align: center;
+}
+
+.banner-carousel {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.banner-carousel img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: #343a40;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+p {
+  color: #666;
+  font-size: 1.2rem;
+}

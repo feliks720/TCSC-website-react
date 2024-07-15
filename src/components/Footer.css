@@ -1,0 +1,35 @@
+/* src/components/Footer.css */
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-info, .footer-contact {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.footer-info h3, .footer-contact h3, .footer-info p, .footer-contact p {
+  margin: 0.2rem 0;
+  color: #fff; /* Set text color to white */
+}
+
+.footer-contact {
+  text-align: left;
+}
