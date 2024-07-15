@@ -1,0 +1,60 @@
+/* src/pages/AboutUs.css */
+
+.about-us {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Fixed height for the banner */
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+.slogan-banner {
+  background-color: #e0f7fa;
+  padding: 20px 0;
+}
+
+.slogan-banner h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.values-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.value-item {
+  flex: 1 1 300px;
+  max-width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.value-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.value-item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #666;
+}
