@@ -19,16 +19,41 @@
   align-items: flex-start;
 }
 
-.footer-info, .footer-contact {
+.footer-info,
+.footer-contact {
   flex: 1;
   margin: 0 1rem;
 }
 
-.footer-info h3, .footer-contact h3, .footer-info p, .footer-contact p {
+.footer-info h3,
+.footer-contact h3,
+.footer-info p,
+.footer-contact p {
   margin: 0.2rem 0;
   color: #fff;
 }
 
 .footer-contact {
   text-align: left;
+}
+
+/* Responsive Styles for Narrow Views */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-info,
+  .footer-contact {
+    margin: 1rem 0;
+  }
+
+  .footer-info h3,
+  .footer-contact h3,
+  .footer-info p,
+  .footer-contact p {
+    margin: 0.5rem 0;
+  }
 }
