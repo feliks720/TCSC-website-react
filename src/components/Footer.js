@@ -19,7 +19,7 @@ const Footer = () => {
           <p>XXXXXXX@gmail.com</p>
         </div>
         <div className="footer-info">
-          <h3>INTERESTING INFOS</h3>
+          <h3>WORKING AREAS</h3>
           <p>Serving the Greater Lower Mainland Vancouver including Richmond, Burnaby, and Port Coquitlam.</p>
         </div>
       </div>
