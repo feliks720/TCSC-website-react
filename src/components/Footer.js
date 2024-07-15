@@ -11,7 +11,7 @@ const Footer = () => {
           <p>Mon-Fri: 7:00-18:00</p>
           <p>Sun: closed</p>
         </div>
-        <div className="footer-contact">
+        <div className="footer-info">
           <h3>TCSC Construction Ltd.</h3>
           <p>XXX-XXXX ABC Drive, Burnaby, BC</p>
           <p>V1X 1X1</p>
