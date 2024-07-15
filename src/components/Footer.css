@@ -5,10 +5,9 @@
   color: #fff;
   padding: 2rem 0;
   text-align: left;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure the footer is part of the document flow */
 }
 
 .footer-container {
@@ -27,7 +26,7 @@
 
 .footer-info h3, .footer-contact h3, .footer-info p, .footer-contact p {
   margin: 0.2rem 0;
-  color: #fff; /* Set text color to white */
+  color: #fff;
 }
 
 .footer-contact {

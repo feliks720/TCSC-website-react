@@ -2,9 +2,9 @@
 
 .navbar {
   width: 100%;
+  background-color: #fff;
+  position: relative; /* Ensure the navbar is part of the document flow */
   z-index: 1000;
-  position: fixed;
-  top: 0;
 }
 
 .navbar-top {
@@ -23,7 +23,7 @@
 }
 
 .navbar-logo {
-  height: 40px; /* Adjust the height as needed */
+  height: 40px;
   margin-right: 1rem;
 }
 
@@ -32,16 +32,24 @@
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
+  font-family: 'Arial', sans-serif;
 }
 
 .navbar-contact a {
   color: #000;
   text-decoration: none;
   font-size: 1rem;
+  font-family: 'Arial', sans-serif;
 }
 
 .navbar-contact a:hover {
   text-decoration: underline;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .navbar-bottom {
@@ -50,6 +58,13 @@
   display: flex;
   justify-content: flex-end;
   padding: 0.5rem 1rem;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+  max-height: none;
+}
+
+.navbar-bottom.open {
+  max-height: 500px; /* Adjust based on the content height */
 }
 
 .navbar-menu {
@@ -69,8 +84,63 @@
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
 }
 
 .navbar-link:hover {
   background-color: #495057;
+}
+
+/* Remove hover effect in narrow view */
+@media (max-width: 768px) {
+  .navbar-link:hover {
+    background-color: transparent;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-bottom {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+  }
+
+  .navbar-bottom.open {
+    display: flex;
+    max-height: 500px; /* Adjust based on the content height */
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+    animation: slideIn 0.3s ease-in-out;
+  }
+
+  .navbar-item {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .navbar-link {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+  }
 }

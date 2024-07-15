@@ -1,21 +1,31 @@
 // src/components/NavBar.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './NavBar.css'; // Import the CSS file for styling
+import './NavBar.css';
+import logo from '../assets/TCSC logo.PNG'; // Ensure this path is correct
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className="navbar">
       <div className="navbar-top">
         <div className="navbar-left">
-          <img src="https://via.placeholder.com/500x500" alt="Company Logo" className="navbar-logo" />
+          <img src={logo} alt="Company Logo" className="navbar-logo" />
           <Link to="/" className="navbar-company-name">TCSC Construction</Link>
         </div>
         <div className="navbar-contact">
           <a href="tel:000-000-0000">000-000-0000</a>
         </div>
+        <div className="navbar-toggle" onClick={toggleMenu}>
+          &#9776;
+        </div>
       </div>
-      <div className="navbar-bottom">
+      <div className={`navbar-bottom ${isOpen ? 'open' : ''}`}>
         <ul className="navbar-menu">
           <li className="navbar-item">
             <Link to="/" className="navbar-link">Home</Link>

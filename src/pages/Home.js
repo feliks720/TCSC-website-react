@@ -30,12 +30,24 @@ const Home = () => {
       <div className="slogan-container">
         <div className="slogan">
           <h2>HIGHLY-PRINCIPLED CUSTOM HOME BUILDER</h2>
-          <h2>DEPENDABLE CONSTRUCTION SERVICES SINCE 2000BC</h2>
+          <h2>DEPENDABLE CONSTRUCTION SERVICES SINCE 2013S</h2>
           <Link to="/contact-us" className="get-quote-button">Get a Quote</Link>
         </div>
       </div>
-      {/* <h1>Welcome to TCSC Construction</h1>
-      <p>Your trusted partner in home building.</p> */}
+      <h1>Welcome to TCSC Construction</h1>
+      <p>Your trusted partner in home building.</p>
+      <div className="image-gallery">
+        <img src="https://via.placeholder.com/400x300" alt="Placeholder 1" />
+        <img src="https://via.placeholder.com/400x300" alt="Placeholder 2" />
+        <img src="https://via.placeholder.com/400x300" alt="Placeholder 3" />
+        <img src="https://via.placeholder.com/400x300" alt="Placeholder 4" />
+        <img src="https://via.placeholder.com/400x300" alt="Placeholder 5" />
+        <img src="https://via.placeholder.com/400x300" alt="Placeholder 6" />
+        <img src="https://via.placeholder.com/400x300" alt="Placeholder 7" />
+        <img src="https://via.placeholder.com/400x300" alt="Placeholder 8" />
+        <img src="https://via.placeholder.com/400x300" alt="Placeholder 9" />
+        <img src="https://via.placeholder.com/400x300" alt="Placeholder 10" />
+      </div>
     </div>
   );
 };

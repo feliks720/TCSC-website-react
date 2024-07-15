@@ -52,10 +52,24 @@
 h1 {
   color: #343a40;
   font-size: 2rem;
-  margin-top: 2rem;
+  margin-top: 4rem; /* Add margin-top to create space below the slogan */
 }
 
 p {
   color: #666;
   font-size: 1.2rem;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.image-gallery img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
 }
