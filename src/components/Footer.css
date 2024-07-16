@@ -5,13 +5,12 @@
   color: #fff;
   padding: 2rem 0;
   text-align: left;
-  width: 100%;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   position: relative; /* Ensure the footer is part of the document flow */
+  display: flex;
 }
 
 .footer-container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
@@ -19,23 +18,17 @@
   align-items: flex-start;
 }
 
-.footer-info,
-.footer-contact {
+.footer-info{
   flex: 1;
   margin: 0 1rem;
 }
 
 .footer-info h3,
-.footer-contact h3,
-.footer-info p,
-.footer-contact p {
+.footer-info p{
   margin: 0.2rem 0;
   color: #fff;
 }
 
-.footer-contact {
-  text-align: left;
-}
 
 /* Responsive Styles for Narrow Views */
 @media (max-width: 768px) {
@@ -45,15 +38,12 @@
     text-align: center;
   }
 
-  .footer-info,
-  .footer-contact {
+  .footer-info{
     margin: 1rem 0;
   }
 
   .footer-info h3,
-  .footer-contact h3,
-  .footer-info p,
-  .footer-contact p {
+  .footer-info p{
     margin: 0.5rem 0;
   }
 }
