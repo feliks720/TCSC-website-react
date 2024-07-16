@@ -47,6 +47,7 @@
   padding: 20px;
   box-sizing: border-box; /* Ensure padding is included in width */
   margin-bottom: 20px; /* Add margin for spacing between sections */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
