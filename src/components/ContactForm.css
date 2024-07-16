@@ -1,10 +1,21 @@
 /* Contact Section Container */
 .contact-section {
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  max-width: 1200px; /* Adjust based on your layout */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
   margin: 50px auto;
+  padding: 0 20px; /* Add padding to ensure content doesn't touch screen edges */
+}
+
+@media (min-width: 768px) {
+  .contact-section {
+    flex-direction: row; /* Row layout for larger screens */
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0;
+  }
 }
 
 /* Contact Form Container */
@@ -13,29 +24,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 20px; */
   background-color: #f9f9f9;
   border-radius: 8px;
-  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
-  max-width: 500px;
+  width: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 0px; /* Add padding for better spacing */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+@media (min-width: 768px) {
+  .contact-form-container {
+    max-width: 500px;
+  }
 }
 
 /* Contact Info Container */
 .contact-info {
-  flex: 0 0 300px; /* Fixed width for the contact info */
-  padding: 20px;
+  width: 100%;
   background-color: #ffffff;
   border-radius: 8px;
-  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  margin-bottom: 20px; /* Add margin for spacing between sections */
+}
+
+@media (min-width: 768px) {
+  .contact-info {
+    flex: 0 0 300px; /* Fixed width for larger screens */
+    margin-bottom: 0;
+  }
 }
 
 /* Form Elements */
 .contact-form {
-  width: 100%;
+  width: 20rem;
 }
 
 .contact-form-group {
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .contact-form-label {
@@ -70,6 +98,8 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
+  width: 100%; /* Full width button for better touch target */
+  box-sizing: border-box;
 }
 
 .contact-form-button:hover {
