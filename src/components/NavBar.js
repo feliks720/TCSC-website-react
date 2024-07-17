@@ -1,5 +1,6 @@
 // src/components/NavBar.js
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
+// import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 import logo from '../assets/TCSC logo.PNG'; // Ensure this path is correct
@@ -35,8 +36,8 @@ const NavBar = () => {
         <div className="navbar-contact">
           <a href="tel:000-000-0000">000-000-0000</a>
         </div>
-        <div className="navbar-toggle" onClick={toggleMenu}>
-          &#9776;
+        <div className={`navbar-toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+          {isOpen ? '✖' : '☰'}
         </div>
       </div>
       <div className={`navbar-bottom ${isOpen ? 'open' : ''}`} ref={menuRef}>

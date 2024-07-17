@@ -48,8 +48,13 @@
 
 .navbar-toggle {
   display: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggle.open {
+  transform: rotate(90deg);
 }
 
 .navbar-bottom {
