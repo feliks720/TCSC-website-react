@@ -2,11 +2,13 @@
 import React from 'react';
 import './Projects.css';
 
+import bannerProjects from '../assets/photos/house2_freephoto.jpg';
+
 const Projects = () => {
   return (
     <div className="projects">
       <div className="banner">
-        <img src="https://via.placeholder.com/1920x600" alt="Banner" className="banner-image" />
+        <img src={bannerProjects} alt="Banner" className="banner-image" />
       </div>
       <div className="slogan-banner">
         <h2>OUR PROJECTS</h2>
