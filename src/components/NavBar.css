@@ -35,15 +35,26 @@
   font-family: 'Arial', sans-serif;
 }
 
-.navbar-contact a {
+.language-switcher {
+  background-color: #fff;
+  border: 2px solid #000;
   color: #000;
-  text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  border-radius: 7px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.navbar-contact a:hover {
-  text-decoration: underline;
+.language-switcher:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.language-switcher:active {
+  background-color: #e0e0e0;
+  transform: scale(0.9);
 }
 
 .navbar-toggle {
@@ -102,6 +113,33 @@
   .navbar-link:hover {
     background-color: transparent;
   }
+
+  .language-switcher {
+    margin-left: -0.1rem; /* Move the button slightly to the left */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .language-switcher:hover {
+    background-color: transparent; /* Disable hover effect */
+    transform: none; /* Disable hover transform */
+  }
+
+  .language-switcher:active {
+    background-color: #e0e0e0;
+    transform: scale(0.9);
+  }
+
+  .language-switcher.active-animation {
+    animation: activateAnimation 0.3s ease;
+  }
+}
+
+@media (max-width: 408px) {
+
+  .navbar-company-name {
+    font-size: 1.2rem;
+  }
+  
 }
 
 @keyframes slideIn {
