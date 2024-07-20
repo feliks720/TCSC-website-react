@@ -126,7 +126,7 @@ p {
 @media (max-width: 768px) {
   .banner-carousel img {
     width: 100vw; /* Ensure the image covers the full width of the viewport */
-    height: 400px; /* Maintain the height of the image */
+    height: 350px; /* Maintain the height of the image */
     object-fit: cover; /* Ensure the image is trimmed to fit */
   }
 

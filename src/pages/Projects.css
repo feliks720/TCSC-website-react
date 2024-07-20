@@ -177,3 +177,10 @@
     min-height: 400px; /* Ensure minimum height for mobile view */
   }
 }
+
+/* Media query to limit the banner height in narrow view */
+@media (max-width: 768px) {
+  .banner {
+    height: 30vh; /* 30% of the viewport height */
+  }
+}
