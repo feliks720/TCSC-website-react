@@ -1,8 +1,7 @@
-// src/components/NavBar.js
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
-import logo from '../assets/TCSC logo.PNG'; // Ensure this path is correct
+import logo from '../assets/TCSC logo.PNG';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,18 +11,10 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
 
-  // const handleClickOutside = (event) => {
-  //   if (menuRef.current && !menuRef.current.contains(event.target)) {
-  //     setIsOpen(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   document.addEventListener('mousedown', handleClickOutside);
-  //   return () => {
-  //     document.removeEventListener('mousedown', handleClickOutside);
-  //   };
-  // }, []);
+  const handleLanguageSwitch = () => {
+    // Dummy function for language switch
+    alert('语言切换功能开发中，敬请期待');
+  };
 
   return (
     <header className="navbar">
@@ -32,9 +23,7 @@ const NavBar = () => {
           <img src={logo} alt="Company Logo" className="navbar-logo" />
           <Link to="/" className="navbar-company-name">TCSC Construction</Link>
         </div>
-        <div className="navbar-contact">
-          <a href="tel:000-000-0000">000-000-0000</a>
-        </div>
+        <button className="language-switcher" onClick={handleLanguageSwitch}>EN/中文</button>
         <div className="navbar-toggle" onClick={toggleMenu}>
           &#9776;
         </div>
