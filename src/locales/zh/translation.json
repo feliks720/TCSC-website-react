@@ -1,0 +1,107 @@
+{
+  "home": {
+    "slogan1": "高度原则的定制住宅建筑商",
+    "slogan2": "自2013年以来提供可靠的建筑服务",
+    "getQuote": "获取报价",
+    "welcome": "欢迎来到TCSC Construction",
+    "trustedPartner": "您可信赖的住宅建筑伙伴。",
+    "ourHistory": "我们的历史",
+    "decadeOfExcellence": "在大温哥华地区的住宅建筑领域的十年卓越",
+    "introParagraph1": "TCSC Construction成立于2013年，由Barbara Cheng女士创立，旨在重新定义建筑行业的质量和工艺标准。我们的旅程始于一个愿景，即提供卓越的住宅并与客户建立牢固的信任关系。",
+    "introParagraph2": "通过奉献精神、辛勤工作和对核心价值观的坚定承诺，我们在大温哥华地区建立了一个值得信赖的名字。我们的获奖团队以其卓越的工艺、诚信和专业精神而闻名。",
+    "introParagraph3": "自成立以来，我们完成了许多项目，每个项目都体现了我们对卓越和客户满意度的不懈追求。在TCSC Construction，我们不仅建造住宅，还实现梦想。",
+    "since": "成立于",
+    "collaborators": "合作者",
+    "projects": "项目",
+    "customers": "客户"
+  },
+
+  "navbar": {
+    "home": "首页",
+    "aboutUs": "关于我们",
+    "ourServices": "我们的服务",
+    "projects": "项目",
+    "contactUs": "联系我们"
+  },
+
+  "footer": {
+    "officeHours": "办公时间",
+    "officeHoursDetails": "周一至周五：上午7:00至下午6:00\n周日：休息",
+    "companyName": "TCSC建筑有限公司",
+    "address": "XXX-XXXX ABC大道，本拿比，BC",
+    "postalCode": "V1X 1X1",
+    "phoneNumber": "000-000-0000",
+    "email": "XXXXXXX@gmail.com",
+    "workingAreas": "工作区域",
+    "workingAreasDetails": "服务大温哥华地区，包括列治文，本拿比和高贵林港。"
+  },
+
+  "aboutUs": {
+    "slogan": "质量是我们的首要任务。我们的核心价值观。我们的信仰。",
+    "values": [
+      {
+        "title": "本地建筑商",
+        "description": "我们的经验包括定制住宅建设、项目管理和土地开发，包括温哥华、列治文、本拿比和高贵林港。"
+      },
+      {
+        "title": "扎根在此",
+        "description": "TCSC建筑公司自2005年成立以来，已建立了值得信赖的定制住宅建筑公司，并不断发展壮大。"
+      },
+      {
+        "title": "良好声誉",
+        "description": "TCSC建筑公司因其诚信和卓越的客户服务建立了良好的声誉。"
+      },
+      {
+        "title": "持证和保税建筑商",
+        "description": "TCSC建筑公司是一家持证和保税的建筑商，雇佣了最优秀的工匠。"
+      },
+      {
+        "title": "保修",
+        "description": "TCSC建筑公司提供2-5-10国家住宅保修，为我们的客户提供安心保障。"
+      },
+      {
+        "title": "合理价格",
+        "description": "我们以合理的价格建造高质量的定制住宅而自豪。"
+      }
+    ]
+  },
+
+  "ourServices": {
+    "slogan1": "我们的服务",
+    "slogan2": "高度原则的建筑",
+    "services": [
+      {
+        "title": "住宅建设管理",
+        "description": "我们提供全面的住宅建设管理服务，确保您的项目按时并在预算内完成。"
+      },
+      {
+        "title": "装修",
+        "description": "我们的装修服务旨在将您的现有空间改造成梦想中的家园。"
+      },
+      {
+        "title": "景观美化",
+        "description": "我们提供专业的景观美化服务，以增强您户外空间的美观和功能。"
+      }
+    ]
+  },
+
+  "projects": {
+    "slogan": "我们的项目",
+    "projectTitles": ["枫木庄园", "日落别墅", "山坡度假村"]
+  },
+  
+  "contactUs": {
+    "bannerSlogan1": "今天联系我们",
+    "bannerSlogan2": "让我们谈谈您的项目",
+    "contactInformation": "联系信息",
+    "address": "地址",
+    "phone": "电话",
+    "email": "电子邮件",
+    "name": "姓名",
+    "message": "信息",
+    "send": "发送",
+    "responseMessageSuccess": "信息已发送，我们将尽快与您联系！",
+    "responseMessageError": "发生错误，请重试"
+  }
+
+}

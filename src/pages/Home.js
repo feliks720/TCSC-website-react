@@ -1,5 +1,6 @@
 // src/pages/Home.js
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -10,6 +11,8 @@ import banner_photo2 from '../assets/photos/bannerHome/interior_livingRM_freepho
 import banner_photo3 from '../assets/photos/bannerHome/vancouverDT_freephoto.jpg';
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="home">
       <div className="banner-carousel">
@@ -21,7 +24,7 @@ const Home = () => {
           showStatus={false}
         >
           <div>
-            <img src={banner_photo1} alt="Banner 1" /> 
+            <img src={banner_photo1} alt="Banner 1" />
           </div>
           <div>
             <img src={banner_photo2} alt="Banner 1" />
@@ -33,45 +36,39 @@ const Home = () => {
       </div>
       <div className="slogan-container">
         <div className="slogan">
-          <h2>HIGHLY-PRINCIPLED CUSTOM HOME BUILDER</h2>
-          <h2>DEPENDABLE CONSTRUCTION SERVICES SINCE 2013</h2>
-          <Link to="/contact-us" className="get-quote-button">Get a Quote</Link>
+          <h2>{t('home.slogan1')}</h2>
+          <h2>{t('home.slogan2')}</h2>
+          <Link to="/contact-us" className="get-quote-button">{t('home.getQuote')}</Link>
         </div>
       </div>
-      <h1>Welcome to TCSC Construction</h1>
-      <p>Your trusted partner in home building.</p>
+      <h1>{t('home.welcome')}</h1>
+      <p>{t('home.trustedPartner')}</p>
 
       <div className="introduction-container">
         <div className="introduction">
           <div className="introduction-text">
-            <h2>Our History</h2>
-            <h3>A Decade of Excellence in Home Building Across the Greater Vancouver Area</h3>
-            <p>
-              TCSC Construction was founded in 2013 by Ms. Barbara Cheng with a mission to redefine the standards of quality and craftsmanship in the construction industry. Our journey began with a vision to deliver exceptional homes and foster strong, trust-based relationships with our clients.
-            </p>
-            <p>
-              Through dedication, hard work, and a steadfast commitment to our core values, we have established ourselves as a trusted name in the Greater Vancouver area. Our award-winning team is known for its outstanding workmanship, integrity, and professionalism.
-            </p>
-            <p>
-              Since our inception, we have completed numerous projects, each reflecting our unwavering commitment to excellence and customer satisfaction. At TCSC Construction, we build more than homes; we build dreams.
-            </p>
+            <h2>{t('home.ourHistory')}</h2>
+            <h3>{t('home.decadeOfExcellence')}</h3>
+            <p>{t('home.introParagraph1')}</p>
+            <p>{t('home.introParagraph2')}</p>
+            <p>{t('home.introParagraph3')}</p>
           </div>
           <div className="introduction-stats">
             <div className="stat">
               <h3>2013</h3>
-              <p>Since</p>
+              <p>{t('home.since')}</p>
             </div>
             <div className="stat">
               <h3>40</h3>
-              <p>Collaborators</p>
+              <p>{t('home.collaborators')}</p>
             </div>
             <div className="stat">
               <h3>500+</h3>
-              <p>Projects</p>
+              <p>{t('home.projects')}</p>
             </div>
             <div className="stat">
               <h3>300+</h3>
-              <p>Customers</p>
+              <p>{t('home.customers')}</p>
             </div>
           </div>
         </div>

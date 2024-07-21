@@ -21,6 +21,7 @@
 .footer-info{
   flex: 1;
   margin: 0 1rem;
+  white-space: pre-wrap;
 }
 
 .footer-info h3,
@@ -46,4 +47,9 @@
   .footer-info p{
     margin: 0.5rem 0;
   }
+}
+/* CSS for Chinese text */
+.chinese-text {
+  font-family: 'Noto Sans SC', sans-serif; /* Example font for Chinese */
+  font-size: 1.2rem;
 }

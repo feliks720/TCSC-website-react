@@ -1,10 +1,12 @@
 // src/components/ContactForm.js
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import emailjs from "emailjs-com";
 import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "./emailJSDefinations";
 import "./ContactForm.css";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,11 +27,11 @@ const ContactForm = () => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
       (result) => {
-        setResponseMessage("Message Sent, We will get back to you shortly!");
+        setResponseMessage(t('contactUs.responseMessageSuccess'));
         setIsError(false);
       },
       (error) => {
-        setResponseMessage("An error occurred, Please try again");
+        setResponseMessage(t('contactUs.responseMessageError'));
         setIsError(true);
       }
     );
@@ -39,21 +41,21 @@ const ContactForm = () => {
   return (
     <div className="contact-section">
       <div className="contact-info">
-        <h2>Contact Information</h2>
+        <h2>{t('contactUs.contactInformation')}</h2>
         <p>
-          <strong>Address:</strong> 1234 Main St, Anytown, USA
+          <strong>{t('contactUs.address')}:</strong> 1234 Main St, Anytown, USA
         </p>
         <p>
-          <strong>Phone:</strong> (123) 456-7890
+          <strong>{t('contactUs.phone')}:</strong> (123) 456-7890
         </p>
         <p>
-          <strong>Email:</strong> contact@provider.com
+          <strong>{t('contactUs.email')}:</strong> contact@provider.com
         </p>
       </div>
       <div className="contact-form-container">
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="contact-form-group">
-            <label className="contact-form-label">Name</label>
+            <label className="contact-form-label">{t('contactUs.name')}</label>
             <input
               className="contact-form-input"
               type="text"
@@ -64,7 +66,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="contact-form-group">
-            <label className="contact-form-label">Email</label>
+            <label className="contact-form-label">{t('contactUs.email')}</label>
             <input
               className="contact-form-input"
               type="email"
@@ -75,7 +77,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="contact-form-group">
-            <label className="contact-form-label">Message</label>
+            <label className="contact-form-label">{t('contactUs.message')}</label>
             <textarea
               className="contact-form-textarea"
               name="message"
@@ -85,7 +87,7 @@ const ContactForm = () => {
             />
           </div>
           <button className="contact-form-button" type="submit">
-            Send
+            {t('contactUs.send')}
           </button>
         </form>
         {responseMessage && (

@@ -135,11 +135,9 @@
 }
 
 @media (max-width: 415px) {
-
   .navbar-company-name {
     font-size: 1.2rem;
   }
-  
 }
 
 @keyframes slideIn {
@@ -188,4 +186,9 @@
     text-align: center;
     width: 100%;
   }
+}
+/* CSS for Chinese text */
+.chinese-text {
+  font-family: 'Noto Sans SC', sans-serif; /* Example font for Chinese */
+  font-size: 1.2rem;
 }

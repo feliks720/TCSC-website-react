@@ -1,26 +1,28 @@
 // src/components/Footer.js
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Footer.css'; // Import the CSS file for styling
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-info">
-          <h3>OFFICE HOURS</h3>
-          <p>Mon -- Fri: 7:00 am -18:00 pm</p>
-          <p>Sun: closed</p>
+          <h3>{t('footer.officeHours')}</h3>
+          <p>{t('footer.officeHoursDetails')}</p>
         </div>
         <div className="footer-info">
-          <h3>TCSC Construction Ltd.</h3>
-          <p>XXX-XXXX ABC Drive, Burnaby, BC</p>
-          <p>V1X 1X1</p>
-          <p>000-000-0000</p>
-          <p>XXXXXXX@gmail.com</p>
+          <h3>{t('footer.companyName')}</h3>
+          <p>{t('footer.address')}</p>
+          <p>{t('footer.postalCode')}</p>
+          <p>{t('footer.phoneNumber')}</p>
+          <p>{t('footer.email')}</p>
         </div>
         <div className="footer-info">
-          <h3>WORKING AREAS</h3>
-          <p>Serving the Greater Lower Mainland Vancouver including Richmond, Burnaby, and Port Coquitlam.</p>
+          <h3>{t('footer.workingAreas')}</h3>
+          <p>{t('footer.workingAreasDetails')}</p>
         </div>
       </div>
     </footer>

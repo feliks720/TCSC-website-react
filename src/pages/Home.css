@@ -159,3 +159,9 @@ p {
     min-width: 100%;
   }
 }
+
+/* CSS for Chinese text */
+.chinese-text {
+  font-family: 'Noto Sans SC', sans-serif; /* Example font for Chinese */
+  font-size: 1.2rem;
+}
