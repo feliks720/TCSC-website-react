@@ -1,16 +1,19 @@
+// src/pages/Projects.js
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Projects.css';
 
 import bannerProjects from '../assets/photos/house2_freephoto.jpg';
 
 const Projects = () => {
+  const { t } = useTranslation();
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [slideDirection, setSlideDirection] = useState('');
 
   const projectData = [
     {
-      title: 'Maplewood Estate',
+      title: t('projects.projectTitles.0'),
       cover: 'https://via.placeholder.com/440x345',
       album: [
         'https://via.placeholder.com/1200x600',
@@ -19,7 +22,7 @@ const Projects = () => {
       ],
     },
     {
-      title: 'Sunset Villa',
+      title: t('projects.projectTitles.1'),
       cover: 'https://via.placeholder.com/440x345',
       album: [
         'https://via.placeholder.com/1200x600',
@@ -28,7 +31,7 @@ const Projects = () => {
       ],
     },
     {
-      title: 'Hillside Retreat',
+      title: t('projects.projectTitles.2'),
       cover: 'https://via.placeholder.com/440x345',
       album: [
         'https://via.placeholder.com/1200x600',
@@ -82,7 +85,7 @@ const Projects = () => {
         <img src={bannerProjects} alt="Banner" className="banner-image" />
       </div>
       <div className="slogan-banner">
-        <h2>OUR PROJECTS</h2>
+        <h2>{t('projects.slogan')}</h2>
       </div>
       <div className="projects-container">
         <div className="projects-section">

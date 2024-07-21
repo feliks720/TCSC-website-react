@@ -1,0 +1,106 @@
+{
+  "home": {
+    "slogan1": "HIGHLY-PRINCIPLED CUSTOM HOME BUILDER",
+    "slogan2": "DEPENDABLE CONSTRUCTION SERVICES SINCE 2013",
+    "getQuote": "Get a Quote",
+    "welcome": "Welcome to TCSC Construction",
+    "trustedPartner": "Your trusted partner in home building.",
+    "ourHistory": "Our History",
+    "decadeOfExcellence": "A Decade of Excellence in Home Building Across the Greater Vancouver Area",
+    "introParagraph1": "TCSC Construction was founded in 2013 by Ms. Barbara Cheng with a mission to redefine the standards of quality and craftsmanship in the construction industry. Our journey began with a vision to deliver exceptional homes and foster strong, trust-based relationships with our clients.",
+    "introParagraph2": "Through dedication, hard work, and a steadfast commitment to our core values, we have established ourselves as a trusted name in the Greater Vancouver area. Our award-winning team is known for its outstanding workmanship, integrity, and professionalism.",
+    "introParagraph3": "Since our inception, we have completed numerous projects, each reflecting our unwavering commitment to excellence and customer satisfaction. At TCSC Construction, we build more than homes; we build dreams.",
+    "since": "Since",
+    "collaborators": "Collaborators",
+    "projects": "Projects",
+    "customers": "Customers"
+  },
+
+  "navbar": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "ourServices": "Our Services",
+    "projects": "Projects",
+    "contactUs": "Contact Us"
+  },
+
+  "footer": {
+    "officeHours": "OFFICE HOURS",
+    "officeHoursDetails": "Mon -- Fri: 7:00 am -18:00 pm\nSun: closed",
+    "companyName": "TCSC Construction Ltd.",
+    "address": "XXX-XXXX ABC Drive, Burnaby, BC",
+    "postalCode": "V1X 1X1",
+    "phoneNumber": "000-000-0000",
+    "email": "XXXXXXX@gmail.com",
+    "workingAreas": "WORKING AREAS",
+    "workingAreasDetails": "Serving the Greater Lower Mainland Vancouver including Richmond, Burnaby, and Port Coquitlam."
+  },
+
+  "aboutUs": {
+    "slogan": "THE QUALITY IS OUR PRIORITY. OUR CORE VALUES. OUR BELIEFS.",
+    "values": [
+      {
+        "title": "LOCAL BUILDER",
+        "description": "Our experience includes custom home building, project management, and land development throughout the area, including Vancouver, Richmond, Burnaby, and Port Coquitlam."
+      },
+      {
+        "title": "HERE TO STAY",
+        "description": "TCSC Construction has established itself as a trusted custom home building company in 2005 and continues to grow and evolve."
+      },
+      {
+        "title": "SOLID REPUTATION",
+        "description": "TCSC Construction has built a solid reputation for integrity and exceptional customer service."
+      },
+      {
+        "title": "LICENSED AND BONDED BUILDER",
+        "description": "TCSC Construction is a licensed and bonded builder, employing the finest craftsmen."
+      },
+      {
+        "title": "WARRANTY",
+        "description": "TCSC Construction offers 2-5-10 National Home Warranty, ensuring peace of mind for our clients."
+      },
+      {
+        "title": "REASONABLE PRICES",
+        "description": "We take pride in building high-quality custom homes at reasonable prices."
+      }
+    ]
+  },
+
+  "ourServices": {
+    "slogan1": "OUR SERVICES",
+    "slogan2": "HIGHLY-PRINCIPLED CONSTRUCTION",
+    "services": [
+      {
+        "title": "Home Build Management",
+        "description": "We offer comprehensive home build management services, ensuring your project is completed on time and within budget."
+      },
+      {
+        "title": "Renovation",
+        "description": "Our renovation services are designed to transform your existing space into the home of your dreams."
+      },
+      {
+        "title": "Landscaping",
+        "description": "We provide professional landscaping services to enhance the beauty and functionality of your outdoor spaces."
+      }
+    ]
+  },
+
+  "projects": {
+    "slogan": "OUR PROJECTS",
+    "projectTitles": ["Maplewood Estate", "Sunset Villa", "Hillside Retreat"]
+  },
+  
+  "contactUs": {
+    "bannerSlogan1": "REACH OUT TODAY",
+    "bannerSlogan2": "Let’s talk about your project",
+    "contactInformation": "Contact Information",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "name": "Name",
+    "message": "Message",
+    "send": "Send",
+    "responseMessageSuccess": "Message Sent, We will get back to you shortly!",
+    "responseMessageError": "An error occurred, Please try again"
+  }
+}

@@ -1,10 +1,13 @@
+// src/components/NavBar.js
 import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './NavBar.css';
 import logo from '../assets/TCSC logo.PNG';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation();
   const menuRef = useRef(null);
 
   const toggleMenu = () => {
@@ -12,8 +15,8 @@ const NavBar = () => {
   };
 
   const handleLanguageSwitch = () => {
-    // Dummy function for language switch
-    alert('语言切换功能开发中，敬请期待');
+    const newLang = i18n.language === 'en' ? 'zh' : 'en';
+    i18n.changeLanguage(newLang);
   };
 
   return (
@@ -31,19 +34,19 @@ const NavBar = () => {
       <div className={`navbar-bottom ${isOpen ? 'open' : ''}`} ref={menuRef}>
         <ul className="navbar-menu">
           <li className="navbar-item" onClick={toggleMenu}>
-            <Link to="/" className="navbar-link">Home</Link>
+            <Link to="/" className="navbar-link">{t('navbar.home')}</Link>
           </li>
           <li className="navbar-item" onClick={toggleMenu}>
-            <Link to="/about-us" className="navbar-link">About Us</Link>
+            <Link to="/about-us" className="navbar-link">{t('navbar.aboutUs')}</Link>
           </li>
           <li className="navbar-item" onClick={toggleMenu}>
-            <Link to="/our-services" className="navbar-link">Our Services</Link>
+            <Link to="/our-services" className="navbar-link">{t('navbar.ourServices')}</Link>
           </li>
           <li className="navbar-item" onClick={toggleMenu}>
-            <Link to="/projects" className="navbar-link">Projects</Link>
+            <Link to="/projects" className="navbar-link">{t('navbar.projects')}</Link>
           </li>
           <li className="navbar-item" onClick={toggleMenu}>
-            <Link to="/contact-us" className="navbar-link">Contact Us</Link>
+            <Link to="/contact-us" className="navbar-link">{t('navbar.contactUs')}</Link>
           </li>
         </ul>
       </div>
