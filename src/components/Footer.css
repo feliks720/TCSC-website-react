@@ -1,5 +1,3 @@
-/* src/components/Footer.css */
-
 .footer {
   background-color: #343a40;
   color: #fff;
@@ -8,6 +6,8 @@
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   position: relative; /* Ensure the footer is part of the document flow */
   display: flex;
+  flex-direction: column; /* Allow for stacking of elements */
+  align-items: center;
 }
 
 .footer-container {
@@ -16,20 +16,39 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100%; /* Ensure it takes the full width */
+  max-width: 1200px; /* Add a max-width for better responsiveness */
 }
 
-.footer-info{
+.footer-info {
   flex: 1;
   margin: 0 1rem;
   white-space: pre-wrap;
 }
 
 .footer-info h3,
-.footer-info p{
+.footer-info p {
   margin: 0.2rem 0;
   color: #fff;
 }
 
+.footer-credits {
+  width: 100%;
+  background-color: #343a40;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-credits p {
+  margin: 0;
+  color: #fff;
+  font-size: 0.9rem; /* Slightly smaller text */
+}
+
+.footer-credits a {
+  color: #fff;
+  text-decoration: underline; /* Underline links for better visibility */
+}
 
 /* Responsive Styles for Narrow Views */
 @media (max-width: 768px) {
@@ -39,15 +58,20 @@
     text-align: center;
   }
 
-  .footer-info{
+  .footer-info {
     margin: 1rem 0;
   }
 
   .footer-info h3,
-  .footer-info p{
+  .footer-info p {
     margin: 0.5rem 0;
   }
+
+  .footer-credits {
+    padding: 0.5rem 0;
+  }
 }
+
 /* CSS for Chinese text */
 .chinese-text {
   font-family: 'Noto Sans SC', sans-serif; /* Example font for Chinese */
