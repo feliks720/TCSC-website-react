@@ -79,12 +79,6 @@ const Home = () => {
         <img src="https://via.placeholder.com/400x300" alt="Placeholder 2" />
         <img src="https://via.placeholder.com/400x300" alt="Placeholder 3" />
         <img src="https://via.placeholder.com/400x300" alt="Placeholder 4" />
-        <img src="https://via.placeholder.com/400x300" alt="Placeholder 5" />
-        <img src="https://via.placeholder.com/400x300" alt="Placeholder 6" />
-        <img src="https://via.placeholder.com/400x300" alt="Placeholder 7" />
-        <img src="https://via.placeholder.com/400x300" alt="Placeholder 8" />
-        <img src="https://via.placeholder.com/400x300" alt="Placeholder 9" />
-        <img src="https://via.placeholder.com/400x300" alt="Placeholder 10" />
       </div>
     </div>
   );
