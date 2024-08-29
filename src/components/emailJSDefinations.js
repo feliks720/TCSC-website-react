@@ -1,6 +1,6 @@
-export const SERVICE_ID = "service_h6v6eyt";
-export const TEMPLATE_ID = "template_6jbtrmn";
-export const PUBLIC_KEY = "_zkqSUUEvGIlO2ZX4";
+export const SERVICE_ID = "service_qe3m5b";
+export const TEMPLATE_ID = "template_q0sypob";
+export const PUBLIC_KEY = "XbPqD623bfMVw4ReX";
 
 /*
     copy and paste the following code to emailJS template:
