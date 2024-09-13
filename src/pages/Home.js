@@ -74,12 +74,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="image-gallery">
+      {/* <div className="image-gallery">
         <img src="https://via.placeholder.com/400x300" alt="Placeholder 1" />
         <img src="https://via.placeholder.com/400x300" alt="Placeholder 2" />
         <img src="https://via.placeholder.com/400x300" alt="Placeholder 3" />
         <img src="https://via.placeholder.com/400x300" alt="Placeholder 4" />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -15,8 +15,8 @@ const Footer = () => {
         </div>
         <div className="footer-info">
           <h3>{t('footer.companyName')}</h3>
-          <p>{t('footer.address')}</p>
-          <p>{t('footer.postalCode')}</p>
+          {/* <p>{t('footer.address')}</p> */}
+          {/* <p>{t('footer.postalCode')}</p> */}
           <p>{t('footer.phoneNumber')}</p>
           <p>{t('footer.email')}</p>
         </div>

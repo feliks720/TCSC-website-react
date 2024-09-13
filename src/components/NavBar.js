@@ -42,9 +42,9 @@ const NavBar = () => {
           <li className="navbar-item" onClick={toggleMenu}>
             <Link to="/our-services" className="navbar-link">{t('navbar.ourServices')}</Link>
           </li>
-          <li className="navbar-item" onClick={toggleMenu}>
+          {/* <li className="navbar-item" onClick={toggleMenu}>
             <Link to="/projects" className="navbar-link">{t('navbar.projects')}</Link>
-          </li>
+          </li> */}
           <li className="navbar-item" onClick={toggleMenu}>
             <Link to="/contact-us" className="navbar-link">{t('navbar.contactUs')}</Link>
           </li>

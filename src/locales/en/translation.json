@@ -26,12 +26,10 @@
 
   "footer": {
     "officeHours": "OFFICE HOURS",
-    "officeHoursDetails": "Mon -- Fri: 7:00 am -18:00 pm\nSun: closed",
+    "officeHoursDetails": "Mon -- Fri: 9:00 am -18:00 pm\nSun: closed",
     "companyName": "TCSC Construction Ltd.",
-    "address": "XXX-XXXX ABC Drive, Burnaby, BC",
-    "postalCode": "V1X 1X1",
-    "phoneNumber": "000-000-0000",
-    "email": "XXXXXXX@gmail.com",
+    "phoneNumber": "778-384-8790",
+    "email": "BCTCSC@gmail.com",
     "workingAreas": "WORKING AREAS",
     "workingAreasDetails": "Serving the Greater Lower Mainland Vancouver including Richmond, Burnaby, and Port Coquitlam."
   },

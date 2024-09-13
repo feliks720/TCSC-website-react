@@ -19,7 +19,7 @@ const Main = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/our-services" element={<OurServices />} />
-            <Route path="/projects" element={<Projects />} />
+            {/* <Route path="/projects" element={<Projects />} /> */}
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
         </CSSTransition>
