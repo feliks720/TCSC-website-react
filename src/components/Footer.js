@@ -15,8 +15,8 @@ const Footer = () => {
         </div>
         <div className="footer-info">
           <h3>{t('footer.companyName')}</h3>
-          <p>{t('footer.address')}</p>
-          <p>{t('footer.postalCode')}</p>
+          {/* <p>{t('footer.address')}</p> */}
+          {/* <p>{t('footer.postalCode')}</p> */}
           <p>{t('footer.phoneNumber')}</p>
           <p>{t('footer.email')}</p>
         </div>
@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
       <div className="footer-credits">
         <p>
-          Designed and Coded by Team UCA: <a href="https://github.com/feliks720" target="_blank" rel="noopener noreferrer">Feliks</a>, <a href="https://github.com/Jerry086" target="_blank" rel="noopener noreferrer">Jerry</a>, and <a href="https://github.com/Yuan223" target="_blank" rel="noopener noreferrer">Yuan</a>
+          Designed and Coded by <a href="https://github.com/feliks720" target="_blank" rel="noopener noreferrer">Feliks</a>
         </p>
       </div>
     </footer>

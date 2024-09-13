@@ -10,6 +10,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
 
@@ -35,21 +36,21 @@ const ContactForm = () => {
         setIsError(true);
       }
     );
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ name: "", email: "", phone: "", message: "" });
   };
 
   return (
     <div className="contact-section">
       <div className="contact-info">
         <h2>{t('contactUs.contactInformation')}</h2>
-        <p>
+        {/* <p>
           <strong>{t('contactUs.address')}:</strong> 1234 Main St, Anytown, USA
+        </p> */}
+        <p>
+          <strong>{t('contactUs.phone')}:</strong> (778) 384-8790
         </p>
         <p>
-          <strong>{t('contactUs.phone')}:</strong> (123) 456-7890
-        </p>
-        <p>
-          <strong>{t('contactUs.email')}:</strong> contact@provider.com
+          <strong>{t('contactUs.email')}:</strong> BCTCSC@gmail.com
         </p>
       </div>
       <div className="contact-form-container">
@@ -76,6 +77,19 @@ const ContactForm = () => {
               required
             />
           </div>
+
+          <div className="contact-form-group">
+            <label className="contact-form-label">{t('contactUs.phone')}</label>
+            <input
+              className="contact-form-input"
+              type="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
           <div className="contact-form-group">
             <label className="contact-form-label">{t('contactUs.message')}</label>
             <textarea

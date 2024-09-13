@@ -28,10 +28,8 @@
     "officeHours": "办公时间",
     "officeHoursDetails": "周一至周五：上午7:00至下午6:00\n周日：休息",
     "companyName": "TCSC建筑有限公司",
-    "address": "XXX-XXXX ABC大道，本拿比，BC",
-    "postalCode": "V1X 1X1",
-    "phoneNumber": "000-000-0000",
-    "email": "XXXXXXX@gmail.com",
+    "phoneNumber": "778-384-8790",
+    "email": "BCTCSC@gmail.com",
     "workingAreas": "工作区域",
     "workingAreasDetails": "服务大温哥华地区，包括列治文，本拿比和高贵林港。"
   },
@@ -103,5 +101,4 @@
     "responseMessageSuccess": "信息已发送，我们将尽快与您联系！",
     "responseMessageError": "发生错误，请重试"
   }
-
 }
